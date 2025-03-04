@@ -1,7 +1,7 @@
-body {
+/* body {
 
     padding-top: 80px;
-}
+} */
 
 
 .new-container {
@@ -636,7 +636,7 @@ a {
     height: 3em;
 }
 
-.info img {
+.info {
     height: 3em;
     margin-right: 0.5em;
 }
@@ -689,8 +689,14 @@ a {
 
 .New_Card img {
 
+    max-width: 117% !important;
     width: 341px;
     height: 253px;
     position: relative;
     left: -24px;
+}
+
+.New_Card p {
+
+    color: rgb(86, 86, 86);
 }

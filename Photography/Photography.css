@@ -11,7 +11,7 @@ h2 {
     font-weight: 500;
 }
 
-ul {
+.Photo_Cards {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -89,6 +89,7 @@ ul {
     transform: translateY(206px);
     transition: .3s;
     height: 133px;
+    text-align: center;
 }
 
 .title {
@@ -224,7 +225,10 @@ ul {
     margin-left: 22px;
 }
 
+.Text-Hero {
 
+    color: white !important;
+}
 
 .A3-Cards {
 
@@ -232,6 +236,14 @@ ul {
     margin-left: 80px;
     display: flex;
     column-gap: 170px;
+    margin-bottom: 120px;
+}
+
+
+.Space {
+
+    position: relative;
+    left: 15%;
 }
 
 /* ------------------------------------------------------------ */

@@ -11,6 +11,11 @@
     <!-- Bootstrap Link -->
 
 
+    <link rel="stylesheet" href="../css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/templatemo-kind-heart-charity.css">
+
+
     <!-- Font Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -23,6 +28,104 @@
 <body>
 
     <!-- start navbar -->
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-geo-alt me-2"></i>
+                        Jordan,Amman
+                    </p>
+
+                    <p class="d-flex mb-0">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@company.com">
+                            belalkhasawneh97@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                    <ul class="social-icon">
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-facebook"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-instagram"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/YourSpot-removebg-preview.png" class="logo img-fluid" alt="Kind Heart Charity">
+                <span>
+                    YourSpot
+                    <small>The right place for you</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link click-scroll dropdown-toggle" href="#section_5"
+                            id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Events</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../Wedding/Wedding.html">Wedding</a></li>
+                            <li><a class="dropdown-item" href="../Events/Event.html">Meeting</a></li>
+                            <li><a class="dropdown-item" href="../Events/Event.html">Birthdays</a></li>
+                            <li><a class="dropdown-item" href="../Events/Event.html">Event farms</a></li>
+                            <li><a class="dropdown-item" href="../Events/Event.html">Seminars</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="../Photography/Photography.html">Photographers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="../About.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="../index.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn btn" href="../Login_Reg/Login_Reg.html">Login</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn btn" href="../Login_Reg/Login_Reg.html">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- end navbar -->
 
@@ -66,12 +169,13 @@
                     <i class="fa-solid fa-user"></i> <span>800-1500</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>1500 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
+                   
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/exterior.jpg" alt="" />
@@ -79,12 +183,12 @@
                     <i class="fa-solid fa-user"></i> <span>700-1200</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>1200 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/6d0b4cc63805d437f612a6cd950c7acf.jpg" alt="" />
@@ -92,12 +196,12 @@
                     <i class="fa-solid fa-user"></i> <span>500-1000</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>1000 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/94bc04fe8bed27fdf7ff7d7ab57c1eec.jpg" alt="" />
@@ -105,12 +209,12 @@
                     <i class="fa-solid fa-user"></i> <span>9700-1300</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>2000 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/2f83766d8c994a95b5574de67e853061.jpg" alt="" />
@@ -118,12 +222,12 @@
                     <i class="fa-solid fa-user"></i> <span>500-1200</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>1000 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
             </div>
             <button class="arrow next">❯</button>
@@ -143,12 +247,12 @@
                     <i class="fa-solid fa-user"></i> <span>500-900</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>900 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/4b8b8b08e8ce27736f5fa95679662693.jpg" alt="" />
@@ -156,12 +260,12 @@
                     <i class="fa-solid fa-user"></i> <span>800-1500</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>1500 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/7.jpg" alt="" />
@@ -169,12 +273,12 @@
                     <i class="fa-solid fa-user"></i> <span>900-1400</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>1400 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/قاعات-النعمان-للاحتفالات.jpg" alt="" />
@@ -182,12 +286,12 @@
                     <i class="fa-solid fa-user"></i> <span>500-1500</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>900 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/247169023_2140662666089948_8039686418999896602_n.jpg" alt="" />
@@ -195,12 +299,12 @@
                     <i class="fa-solid fa-user"></i> <span>700-1000</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>800 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
             </div>
             <button class="arrow next">❯</button>
@@ -220,12 +324,12 @@
                     <i class="fa-solid fa-user"></i> <span>300-400</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>1500 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/bellevue_farm.jpg" alt="" />
@@ -233,12 +337,12 @@
                     <i class="fa-solid fa-user"></i> <span>300-700</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>1600 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/cedar_farm.jpeg" alt="" />
@@ -246,12 +350,12 @@
                     <i class="fa-solid fa-user"></i> <span>200-600</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>1700 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/calla_farm.jpg" alt="" />
@@ -259,36 +363,38 @@
                     <i class="fa-solid fa-user"></i> <span>700-800</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>1700 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/dream_farm.jpg" alt="" />
                     <h3>dream farm</h3>
                     <i class="fa-solid fa-user"></i> <span>200-500</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>900 min spend </span></div>
-                    <button class="learn-more">
+                    <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/jude_farm.jpg" alt="" />
                     <h3>jude farm</h3>
                     <i class="fa-solid fa-user"></i> <span>100-300</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>600 min spend </span></div>
-                    <button class="learn-more">
+                    <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/level_farm.jpg" alt="" />
@@ -296,12 +402,12 @@
                     <i class="fa-solid fa-user"></i> <span>300-600</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>1500 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
                 <div class="home-box offer-box">
                     <img src="../images/naya_farm.jpg" alt="" />
@@ -309,12 +415,12 @@
                     <i class="fa-solid fa-user"></i> <span>200-500</span>
                     <div class="location"><i class="fa-solid fa-dollar"></i> <span>600 min spend </span></div>
                     <div class="location"><i class="fa-solid fa-location"></i> <span>Amman</span></div>
-                    <button class="learn-more">
+                    <a href="../Details/Details.html"> <button class="learn-more">
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">Show Details</span>
-                    </button>
+                    </button></a>
                 </div>
 
 
@@ -338,13 +444,13 @@
 
         <section class="info">
 
-            
-           
+
+
         </section>
         <section class="cards-wrapper">
             <div class="card-grid-space">
-               
-                <a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/"
+
+                <a class="card" href="../Photography/Photography.html"
                     style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
                     <div class="New_Card">
                         <img src="../images/55c85be926efc0b1a90f64d607d3ec8e.jpg" alt="">
@@ -354,10 +460,10 @@
                     </div>
                 </a>
             </div>
-         
+
             <div class="card-grid-space">
-             
-                <a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/"
+
+                <a class="card" href="../Dresses_Gallery/Dresses.html"
                     style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
                     <div class="New_Card">
                         <img src="../images/v2-1wmyj-0110p.jpg" alt="">
@@ -374,6 +480,106 @@
 
 
     <!-- start Footer -->
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-4">
+                    <img src="../images/YourSpot-removebg-preview.png" class="logo img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3">YourSpot</h5>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="../index.html" class="footer-menu-link">Home</a></li>
+
+                        <li class="footer-menu-item"><a href="../Wedding/Wedding.html" class="footer-menu-link">Wedding</a></li>
+
+                        <li class="footer-menu-item"><a href="../Events/Event.html" class="footer-menu-link">Events</a></li>
+
+                        <li class="footer-menu-item"><a href="../Photography/Photography.html" class="footer-menu-link">Photographers</a></li>
+
+                        <li class="footer-menu-item"><a href="../Dresses_Gallery/Dresses.html" class="footer-menu-link">Dresses</a></li>
+                        <li class="footer-menu-item"><a href="../Events/Event.html" class="footer-menu-link">Meeting</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                    <h5 class="site-footer-title mb-3">Contact Infomation</h5>
+
+                    <p class="text-white d-flex mb-2">
+                        <i class="bi-telephone me-2"></i>
+
+                        <a href="tel: 120-240-9600" class="site-footer-link">
+                            +962786188639
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                            belalkhasawneh97@gmail.com
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex mt-3">
+                        <i class="bi-geo-alt me-2"></i>
+                        Jordan,Amman
+                    </p>
+
+                    <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <p class="copyright-text mb-0">Copyright © 2025 <a href="#">YourSpot</a>
+                            Design: <a href="https://templatemo.com" target="_blank">Bilal</a></p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-linkedin"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://youtube.com/templatemo" class="social-icon-link bi-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+
 
 
     <!-- end Footer -->

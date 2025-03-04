@@ -1,0 +1,120 @@
+
+-- Users
+CREATE TABLE Users (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    name NVARCHAR(255),
+    email NVARCHAR(255) UNIQUE,
+    phone NVARCHAR(50),
+    user_type NVARCHAR(50) 
+);
+
+-- Venues
+CREATE TABLE Venues (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    name NVARCHAR(255),
+    location NVARCHAR(255),
+    price DECIMAL(18, 2),
+    capacity INT,
+    venue_type NVARCHAR(50), 
+    services NVARCHAR(MAX),
+);
+
+-- Images
+CREATE TABLE Images (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    service_type NVARCHAR(50), 
+    service_id INT,
+    image_url NVARCHAR(255) 
+);
+
+-- Bookings
+CREATE TABLE Bookings (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    booking_date DATE,
+    venue_id INT FOREIGN KEY REFERENCES Venues(id),
+    user_id INT FOREIGN KEY REFERENCES Users(id),
+    amount_paid DECIMAL(18, 2),
+    booking_status NVARCHAR(50) 
+);
+
+-- Payments
+CREATE TABLE Payments (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    amount_paid DECIMAL(18, 2),
+    payment_method NVARCHAR(50),
+    transaction_id NVARCHAR(255),
+    payment_status NVARCHAR(50), 
+    booking_id INT FOREIGN KEY REFERENCES Bookings(id)
+);
+
+--Reviews
+CREATE TABLE Reviews (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    rating INT, -- بين 1 و 5
+    comment NVARCHAR(MAX),
+    user_id INT FOREIGN KEY REFERENCES Users(id),
+    service_id INT, 
+    service_type NVARCHAR(50), 
+    review_date DATETIME
+);
+
+-- Cancellations
+CREATE TABLE Cancellations (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    cancellation_date DATE,
+    reason NVARCHAR(MAX),
+    cancellation_status NVARCHAR(50), 
+    booking_id INT FOREIGN KEY REFERENCES Bookings(id)
+);
+
+-- Notifications
+CREATE TABLE Notifications (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    notification_type NVARCHAR(50), 
+    user_id INT FOREIGN KEY REFERENCES Users(id),
+    notification_date DATETIME,
+    notification_message NVARCHAR(MAX)
+);
+
+-- Dresses
+CREATE TABLE Dresses (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    brand NVARCHAR(255),
+    size NVARCHAR(50),
+    price DECIMAL(18, 2)
+);
+
+-- Photographers
+CREATE TABLE Photographers (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    name NVARCHAR(255),
+    experience_years INT,
+    price DECIMAL(18, 2)
+);
+
+-- Discounts
+CREATE TABLE Discounts (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    discount_percentage DECIMAL(5, 2),
+    discount_type NVARCHAR(50), 
+    start_date DATE,
+    end_date DATE,
+    discount_status NVARCHAR(50) 
+);
+
+-- Feedback
+CREATE TABLE Feedback (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    comment NVARCHAR(MAX),
+    user_id INT FOREIGN KEY REFERENCES Users(id),
+    service_id INT, -- معرّف المكان أو المصور أو الفستان
+    service_type NVARCHAR(50), -- مكان أو مصور أو فستان
+    feedback_date DATETIME
+);
+
+
+
+
+
+//Link schema
+https://dbdiagram.io/d/67c78bed263d6cf9a03ae05a

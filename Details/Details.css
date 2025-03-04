@@ -55,7 +55,7 @@ button {
     background: none;
 }
 
-img {
+/* img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -63,7 +63,7 @@ img {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
-}
+} */
 
 /* Elements */
 .section {
@@ -261,7 +261,7 @@ h1 {
   .Fav {
 
     position: relative;
-    left: 74%;
+    left: 77%;
    
     bottom: -79px;
   }

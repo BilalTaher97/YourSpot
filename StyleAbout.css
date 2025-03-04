@@ -145,6 +145,7 @@ body {
 .container-1 {
 
 	margin-left: 290px;
+	margin-bottom: 120px;
 
 }
 
@@ -521,13 +522,13 @@ ul {
 
 /* start templatemo footer */
 
-footer {
+/* footer {
 	margin-top: 80px;
 	padding: 80px 0px 70px 0px;
 	border-top: 1px solid #ddd;
-}
+} */
 
-footer .footer-heading h4 {
+/* footer .footer-heading h4 {
 	font-size: 21px;
 	color: #232323;
 	letter-spacing: 0.5px;
@@ -618,7 +619,7 @@ footer .contact-info ul li a {
 
 	color: #5bc1ac;
 
-}
+} */
 
 /* end templatemo footer */
 
