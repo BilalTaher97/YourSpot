@@ -107,14 +107,8 @@ CREATE TABLE Feedback (
     id INT PRIMARY KEY IDENTITY(1,1),
     comment NVARCHAR(MAX),
     user_id INT FOREIGN KEY REFERENCES Users(id),
-    service_id INT, -- معرّف المكان أو المصور أو الفستان
-    service_type NVARCHAR(50), -- مكان أو مصور أو فستان
+    service_id INT, 
+    service_type NVARCHAR(50), 
     feedback_date DATETIME
 );
 
-
-
-
-
-//Link schema
-https://dbdiagram.io/d/67c78bed263d6cf9a03ae05a
